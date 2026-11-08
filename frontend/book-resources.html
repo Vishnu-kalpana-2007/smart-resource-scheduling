@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Resources - SmartSchedule</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-regular fa-calendar-days"></i>
+
+        <span>
+            Smart<span>Schedule</span>
+        </span>
+    </div>
+
+    <nav>
+        <a href="user-dashboard.html">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </a>
+
+        <a href="book-resources.html" class="nav-btn">
+            <i class="fa-solid fa-calendar-plus"></i>
+            Book Resource
+        </a>
+
+        <a href="my-bookings.html">
+            <i class="fa-solid fa-calendar-check"></i>
+            My Bookings
+        </a>
+
+        <a href="index.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+    </nav>
+
+</header>
+
+
+<section class="booking-page">
+
+    <div class="booking-header">
+
+        <p class="tagline">RESOURCE BOOKING</p>
+
+        <h1>
+            Find & <span>Book</span>
+        </h1>
+
+        <p>
+            Select a resource and choose your preferred date and time.
+        </p>
+
+    </div>
+
+
+    <div class="booking-container">
+
+        <div class="resource-section">
+
+            <h2>Available Resources</h2>
+
+            <div id="resourceList">
+
+                <div class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+
+                    <div>
+                        <h3>Conference Room</h3>
+
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Main Building
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Capacity: 10
+                        </p>
+                    </div>
+
+                    <button class="select-btn">
+                        Select
+                    </button>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <div>
+                        <h3>Computer Lab</h3>
+
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Block A
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Capacity: 30
+                        </p>
+                    </div>
+
+                    <button class="select-btn">
+                        Select
+                    </button>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-chalkboard"></i>
+                    </div>
+
+                    <div>
+                        <h3>Training Hall</h3>
+
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Block B
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-users"></i>
+                            Capacity: 50
+                        </p>
+                    </div>
+
+                    <button class="select-btn">
+                        Select
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="booking-form-card">
+
+            <h2>Booking Details</h2>
+
+            <form id="bookingForm">
+
+                <label>Resource</label>
+
+                <select id="resourceId" required>
+                    <option value="">Select Resource</option>
+                </select>
+
+
+                <label>Date</label>
+
+                <input
+                    type="date"
+                    id="bookingDate"
+                    required>
+
+
+                <label>Start Time</label>
+
+                <input
+                    type="time"
+                    id="startTime"
+                    required>
+
+
+                <label>End Time</label>
+
+                <input
+                    type="time"
+                    id="endTime"
+                    required>
+
+
+                <button type="submit" class="auth-btn">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Confirm Booking
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 SmartSchedule | Smarter Scheduling. A More Organized You.
+</footer>
+
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

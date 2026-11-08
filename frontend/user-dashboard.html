@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - SmartSchedule</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-regular fa-calendar-days"></i>
+
+        <span>
+            Smart<span>Schedule</span>
+        </span>
+    </div>
+
+    <nav>
+        <a href="user-dashboard.html">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </a>
+
+        <a href="book-resources.html">
+            <i class="fa-solid fa-calendar-plus"></i>
+            Book Resource
+        </a>
+
+        <a href="my-bookings.html">
+            <i class="fa-solid fa-calendar-check"></i>
+            My Bookings
+        </a>
+
+        <a href="index.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+    </nav>
+
+</header>
+
+
+<section class="dashboard-page">
+
+    <div class="dashboard-header">
+
+        <p class="tagline">USER DASHBOARD</p>
+
+        <h1>
+            Welcome to <span>SmartSchedule</span>
+        </h1>
+
+        <p>
+            Manage your resources and bookings from one place.
+        </p>
+
+    </div>
+
+
+    <div class="dashboard-stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div>
+                <h2 id="totalBookings">0</h2>
+                <p>Total Bookings</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+                <h2 id="confirmedBookings">0</h2>
+                <p>Confirmed</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div>
+                <h2 id="cancelledBookings">0</h2>
+                <p>Cancelled</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <div>
+                <h2 id="totalResources">0</h2>
+                <p>Resources</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-actions">
+
+        <a href="book-resources.html" class="dashboard-action">
+
+            <i class="fa-solid fa-calendar-plus"></i>
+
+            <div>
+                <h3>Book a Resource</h3>
+                <p>Find an available room or resource.</p>
+            </div>
+
+        </a>
+
+
+        <a href="my-bookings.html" class="dashboard-action">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <div>
+                <h3>My Bookings</h3>
+                <p>View and manage your bookings.</p>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 SmartSchedule | Smarter Scheduling. A More Organized You.
+</footer>
+
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
